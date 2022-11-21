@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/menuyfooter.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link rel="stylesheet" href="styles/fontello.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Carrito De Compras</title>
+  </head>
+
+  <body>
+    <!-- main header -->
+    <header class="main-header">
+      <div class="btn-menu">
+        <label for="btn-menu" class="icon-menu"></label>
+      </div>
+
+      <div class="logo-box">
+        <img src=".img/BARRIGAS FELICES.png" alt="" />
+      </div>
+      <div class="main-icons">
+        <div class="shopping-icon">
+          <a href="cart.html"
+            ><i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-content">1</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <figure class="log-menu">
+          <img src=".img/BARRIGAS FELICES.png" alt="" />
+        </figure>
+        <nav>
+          <hr />
+
+          <a href="index.html">Inicio</a>
+          <a href="#listado">Lista de productos</a>
+          <a href="#">Contacto</a>
+        </nav>
+        <label for="btn-menu" class="icon-cancel"></label>
+      </div>
+    </div>
+    <div class="page">
+      <!-- main-header end -->
+      <div class="textoi">
+        ¡AQUI PUEDES GESTIONAR <span> TUS FUTURAS COMPRAS</span>!
+      </div>
+
+      <!-- todos los productos -->
+      <div id="continer">
+        <div class="continer">
+          <section id="menu1">
+            <a class="a" href="#menu1">PRESTO</a>
+
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Combo Perro Titan.PNG"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">COMBO PERRO TITAN</div>
+              <div class="itemPrice">26.100$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Combo Hamburguesa Titan.PNG"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">COMBO HAMBURGUESA PREMIUM</div>
+              <div class="itemPrice">36.600$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Super perro presto.PNG"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">SUPER PERRO PRESTO</div>
+              <div class="itemPrice">20.100$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+            
+          </section>
+
+          <section id="menu2">
+            <a class="a" href="#menu2">COSECHAS</a>
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Verde fit.png"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">VERDE FIT</div>
+              <div class="itemPrice">9.300$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Sandia fresa limon.png"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">SANDÍA – FRESA – LIMÓN</div>
+              <div class="itemPrice">8.900$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Mariposa Naranja.png"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">MARIPOSA NARANJA</div>
+              <div class="itemPrice">9.500$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+          </section>
+          <section id="menu3">
+            <a class="a" href="#menu3">DON JACOBO</a>
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Genovesa clasicaa.PNG"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">GENOVESA CLASICA</div>
+              <div class="itemPrice">29.900$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Torta chocolate intenso.PNG"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">TORTA DE CHOCOLATE INTENSO</div>
+              <div class="itemPrice">29.900$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Helado.PNG"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">VASO DE HELADO</div>
+              <div class="itemPrice">3.000$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+          </section>
+
+          <section id="menu4">
+            <a class="a" href="#menu4">SUBWAY</a>
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/sandwich pavo jamon+.PNG"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">COMBO SUB PAVO JAMON</div>
+              <div class="itemPrice">15.750$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Sandwich costillas bbq.PNG"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">COMBO COSTILLAS BBQ</div>
+              <div class="itemPrice">21.900$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+
+            <div class="item">
+              <div id="image">
+                <img
+                  class="itemImage"
+                  src="./.img/Sandwich vegetariano.PNG"
+                  alt=""
+                />
+              </div>
+              <div class="itemTitle" id="name">VEGETARIANO CON GUACAMOLE</div>
+              <div class="itemPrice">14.700$</div>
+              <button class="addToCart" id="añadir">--> ¡AÑADIR! <--</button>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- todos los productos END -->
+
+
+      <div class="textoc">!MIRA TUS COMPRAS!</div>
+
+    
+    <!--Carrito de Compras-->
+
+    <!-- carrito HTML-->
+    <div class="continerShoppingCart">
+        
+        <div class="iniciotabla">
+            <div class="producto">Producto</div>
+            <div class="precio">Precio</div>
+            <div class="cantidad">cantidad</div>
+        </div> 
+          
+
+      <div class="shoppingCartItemsContainer"></div>
+
+
+      <div class="comprar">
+        <div class="total">Total:</div>
+        <div class="shoppingCartTotal"></div>
+        <button class="comprarButton">Comprar</button></a>
+      </div>
+    </div>
+    <!-- carrito HTML END-->
+
+    <!--Carrito de Compras script-->
+
+    <script>
+      const addToShoppingCartButtons = document.querySelectorAll(".addToCart");
+      addToShoppingCartButtons.forEach((addToCartButton) => {
+        addToCartButton.addEventListener("click", addToCartClicked);
+      });
+
+      const comprarButton = document.querySelector('.comprarButton');
+      comprarButton.addEventListener('click', comprarButtonClicked);
+
+      const shoppingCartItemsContainer = document.querySelector(
+        ".shoppingCartItemsContainer"
+      );
+
+      function addToCartClicked(event) {
+        const button = event.target;
+        const item = button.closest(".item");
+
+        const itemTitle = item.querySelector(".itemTitle").textContent;
+        const itemPrice = item.querySelector(".itemPrice").textContent;
+        const itemImage = item.querySelector(".itemImage").src;
+
+        addItemToShoppingCart(itemTitle, itemPrice, itemImage);
+      }
+
+      function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
+        const elementsTitle = shoppingCartItemsContainer.getElementsByClassName('shoppingCartItemTitle');
+
+        
+        for(let i = 0; i < elementsTitle.length; i++){
+            if(elementsTitle[i].innerText === itemTitle){
+            let elementQuantity = elementsTitle[i].parentElement.parentElement.parentElement.querySelector('.shoppingCartItemQuantity');
+            elementQuantity.value++;
+            upadeShoppingCartTotal()
+            return;        
+            }
+        }
+
+
+        const shoppingCartRow = document.createElement("div");
+        const shoppingCartContent = `
+        <div class="shoppingCartItem">
+          <div class="carttabla">
+            <div><img class="image1" src=${itemImage} alt="" /></div>
+            <div class="shoppingCartItemTitle">${itemTitle}</div>
+            <div class="shoppingCartItemPrice">${itemPrice}</div>
+            <input class="shoppingCartItemQuantity" type="number" value="1"/>
+            <div><button class="buttonDelete">X</button></div>
+          </div>
+        </div>`;
+        shoppingCartRow.innerHTML = shoppingCartContent;
+        shoppingCartItemsContainer.append(shoppingCartRow);
+
+        shoppingCartRow.querySelector('.buttonDelete').addEventListener('click', removeShoppingCartItem);
+
+        shoppingCartRow.querySelector('.shoppingCartItemQuantity').addEventListener('change', quantityChanged);
+
+        upadeShoppingCartTotal();
+      }
+      function upadeShoppingCartTotal (){
+        let total = 0;
+        const ShoppingCartTotal = document.querySelector('.shoppingCartTotal');
+
+        const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
+
+        shoppingCartItems.forEach((shoppingCartItem) => {
+            const shoppingCartItemPriceElement = shoppingCartItem.querySelector('.shoppingCartItemPrice'); 
+
+            const shoppingCartItemPrice = Number(shoppingCartItemPriceElement.textContent.replace('$',''));
+
+            const shoppingCartItemQuantityElement =shoppingCartItem.querySelector('.shoppingCartItemQuantity');
+
+            const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value);
+
+            total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
+            
+            
+        });
+        ShoppingCartTotal.innerHTML = `${total.toFixed(3)}$`
+    }
+    function removeShoppingCartItem(event){
+        const buttonClicked = event.target;
+
+        buttonClicked.closest('.shoppingCartItem').remove();
+        upadeShoppingCartTotal();
+    }
+    function quantityChanged(event){
+        const input = event.target;
+        if(input.value <=0){
+            input.value = 1;
+        }
+        upadeShoppingCartTotal();
+    }
+    function comprarButtonClicked(){
+        shoppingCartItemsContainer.innerHTML = '';
+        upadeShoppingCartTotal()
+    }
+
+
+    </script>
+    <!--Carrito de Compras script END-->
+
+    <!--Carrito de Compras  END-->
+
+    <!--Chat whatsapp-->
+    <a
+      class="api"
+      href="https://api.whatsapp.com/send?phone=3045248972&text=hola%20hebert"
+      target="_blank"
+      >api de whatsapp</a
+    >
+
+    <div>
+      <form class="form-wts" action="" id="form">
+        <label for="">¿Cual es tu nombre?</label>
+        <input class="inputwts" type="text" />
+        <label for=""> ¿Que deseas Ordenar?</label>
+        <textarea
+          class="textareawts"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button class="btn-wts" id="sendbtn">Enviar mensaje</button>
+      </form>
+      <img class="icon-wts" src=".img/whats.webp" alt="" id="wtsicon" />
+    </div>
+
+    <script>
+      var btnwts = document.querySelector("#wtsicon");
+      var form = document.querySelector("#form");
+      var sendbtn = document.querySelector("#sendbtn");
+
+      btnwts.addEventListener("click", function () {
+        form.classList.toggle("entrarysalir");
+      });
+
+      sendbtn.addEventListener("click", enviarMensaje);
+
+      function enviarMensaje() {
+        var inputName = document.querySelector(".inputwts").value;
+        var textareaMensaje = document.querySelector(".textareawts").value;
+        let url =
+          "https://api.whatsapp.com/send?phone=3045248972&text=¿Cual es tu nombre?: %0A" +
+          inputName +
+          "%0A%0A¿Que deseas Ordenar?: %0A" +
+          textareaMensaje +
+          "%0A";
+
+        window.open(url);
+      }
+    </script>
+    <!-- chat whatsapp END-->
+
+    <!-- main-footer -->
+    <footer class="main-footer">
+      <figure class="footer-logo">
+        <a href="index.html"><img src=".img/BARRIGAS FELICES.png" alt="" /></a>
+      </figure>
+
+      <div class="footer-widget">
+        <div class="widget-title">
+          <h3>Contactanos</h3>
+        </div>
+        <div class="widget-content">
+          <ul class="links-list">
+            <li>4708 Ruecker Wall, <br />Kassandratown, HI</li>
+            <li><a href="tel:23055873407">+2(305) 587-3407</a></li>
+            <li><a href="mailto:info@example.com">info@example.com</a></li>
+          </ul>
+        </div>
+
+        <ul class="footer-social">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-vimeo-v"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="end-footer">
+      <span>Food © 2020 All Right Reserved</span>
+    </div>
+    <!-- main-footer end -->
+  </body>
+</html>

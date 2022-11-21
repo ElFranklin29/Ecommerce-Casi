@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative; 
+    
+}
+
+.grit1{
+    display: grid;
+    grid-template-columns: 30% 2% 24% 44%;
+    grid-template-rows: none;
+    
+}
+.grid2{
+    display: grid;
+    grid-template-rows: 20% 10% 18% 35%;
+    gap: 0;
+    
+}
+
+.image{
+    width: 477px;
+    height: 477px;
+
+    margin: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 5%;    
+}
+.line{
+    width: 1px;
+    height: 477px;
+    background-color:#000;
+    top: 30px;  
+}
+.texto{
+    top: 50%;
+    font-family: 'josefin sans', sans-serif;
+    width: 900px;
+    font-size: 40px;
+    
+}
+.price{
+    font-family: 'josefin sans', sans-serif;
+    font-size: 25px;
+    width: 200px;
+    top: 25%;
+    
+
+}
+
+h1{
+    color: #584F4F;
+}
+span  {
+    color: #781D1D;
+}
+
+
+/* Estrellas */
+.contador{
+    width: 300px;
+    height: 70px;
+    top: 40%;
+    left: 15.8%;
+    transform: translate(-50%,-50%) rotateY(180deg);
+    display: flex;
+}
+.contador input{
+    display: none;
+}
+
+.contador label{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    margin: 5px;
+}
+.contador label::before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 40px;
+    color: #101010;
+
+}
+.contador label::after{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size:  40px;
+    color: #fd4;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.contador label:hover:after,
+.contador input:hover ~ label:after,
+.contador input:checked ~ label:after
+{
+    opacity: 1;
+}
+
+/* Estrellas END*/
+.imageSC{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    margin-bottom: 5px;
+}
+
+.description{
+    width: 600px;
+    height: 350px;
+    top: 18%;
+    left: 15%;
+    font-family: 'josefin sans', sans-serif;
+    text-align: center;
+}
+.h3{
+    margin: 40px;
+    font-size: 30px;
+    color: #8a8484;
+}
+.h1{
+    font-size: 40px;
+}
+
+
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightGrey: #EDF0F5;
+    --grey: #908484;
+    --red: #FF4135;
+    --black: #222222;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*chat whatsapp*/
+
+.chat{
+    z-index: 1;
+}
+.api{
+    font-size: 0;
+ }
+
+
+ .icon-wts {
+     width: 60px;
+     height: 60px;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     cursor: pointer;
+ }
+
+ .icon-wts:active {
+     transform: scale(0.9);
+ }
+
+ .form-wts {
+     width: 220px;
+     height: 280px;
+     position: fixed;
+     background: white;
+     bottom: 80px;
+     right: 50px;
+     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.22);
+     border-radius: 5px;
+     padding: 10px;
+     display: none;
+ }
+
+ .entrarysalir {
+     display: block;
+
+ }
+
+ .inputwts {
+     width: 100%;
+     padding: 5px;
+     color: #666;
+     box-sizing: border-box;
+     border-radius: 5px;
+     border: 1px solid rgba(0, 0, 0, 0.19);
+ }
+
+ .inputwts:focus {
+     outline: none;
+ }
+
+ .textareawts:focus {
+     outline: none;
+ }
+
+ .textareawts {
+     width: 100%;
+     min-width: 100%;
+     min-width: 100%;
+     padding: 5px;
+     color: #666;
+     height: 120px;
+     min-height: 120px;
+     max-height: 120px;
+     box-sizing: border-box;
+     border-radius: 5px;
+     border: 1px solid rgba(0, 0, 0, 0.19);
+
+ }
+
+
+ .btn-wts {
+     width: 100%;
+     background: #00a82d;
+     border: none;
+     padding: 5px;
+     color: white;
+     border-radius: 5px;
+
+ }
+
+ .main {
+
+    border:1px solid #000;
+    background-color: #666;
+    width: 90%;
+    height: 50%; 
+
+    display: grid;
+    grid-template-rows: 10%;
+    padding: 20px;
+    
+ }
+ 
+
+

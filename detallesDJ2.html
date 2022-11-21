@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>TORTA DE CHOCOLATE INTENSO</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href=".img/BARRIGAS FELICES.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./styles/menuyfooter.css" />
+    <link rel="stylesheet" href="styles/fontello.css" />
+    <link rel="stylesheet" href="styles/descripcion.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- main header -->
+    <header class="main-header">
+      <!--MENU PARTE 1 -->
+      <div class="btn-menu">
+        <label for="btn-menu" class="icon-menu"></label>
+      </div>
+      <!--MENU PARTE 1 END -->
+
+      <div class="logo-box">
+        <img src=".img/BARRIGAS FELICES.png" alt="" />
+      </div>
+      <div class="main-icons">
+        <div class="shopping-icon">
+          <a href="cart.html"
+            ><i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-content">1</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- MENU PARTE 2 -->
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+      <div class="cont-menu">
+        <figure class="log-menu">
+          <img src=".img/BARRIGAS FELICES.png" alt="" />
+        </figure>
+        <nav>
+          <hr />
+
+          <a href="index.html">Inicio</a>
+          <a href="#listado">Lista de productos</a>
+          <a href="#">Contacto</a>
+        </nav>
+        <label for="btn-menu" class="icon-cancel"></label>
+      </div>
+    </div>
+    <!--MENU PARTE 2 END -->
+
+    <!-- main-header end -->
+
+    <!-- Descripcion del producto -->
+
+    <div class="grit1">
+      <div class="foto">
+        <img src=".img/Torta chocolate intenso.PNG" class="image" alt="" />
+      </div>
+
+      <div class="line"></div>
+
+      <div class="grid2">
+        <div>
+          <h1 class="texto">TORTA DE <span>CHOCOLATE INTENSO</span></h1>
+        </div>
+        <div><h6 class="price">29.900$</h6></div>
+
+        <div class="contador">
+          <input type="radio" name="star" id="star1" />
+          <label for="star1"></label>
+
+          <input type="radio" name="star" id="star2" />
+          <label for="star2"></label>
+
+          <input type="radio" name="star" id="star3" />
+          <label for="star3"></label>
+
+          <input type="radio" name="star" id="star4" />
+          <label for="star4"></label>
+
+          <input type="radio" name="star" id="star5" />
+          <label for="star5"></label>
+        </div>
+
+        <div>
+          <a href="cart.html">
+            <img
+              class="imageSC"
+              src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png"
+              alt=""
+            />
+            <h1>¡Añadelo al Carrito!</h1>
+          </a>
+        </div>
+      </div>
+
+      <div class="description">
+        <h1 class="h1">
+          En este <span>maravilloso producto </span> encontraras...
+        </h1>
+        <h3 class="h3">
+          Torta de chocolate cubierta con ganache de chocolate, decorada con
+          delicados copos, rollos de chocolate, etc.
+        </h3>
+      </div>
+    </div>
+
+    <!-- Descripcion del producto END -->
+
+    <!--Chat whatsapp-->
+    <a
+      class="api"
+      href="https://api.whatsapp.com/send?phone=3045248972&text=hola%20hebert"
+      target="_blank"
+      >api de whatsapp</a
+    >
+
+    <div class="chat">
+      <form class="form-wts" action="" id="form">
+        <label for="">¿Cual es tu nombre?</label>
+        <input class="inputwts" type="text" />
+        <label for=""> ¿Que deseas Ordenar?</label>
+        <textarea
+          class="textareawts"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button class="btn-wts" id="sendbtn">Enviar mensaje</button>
+      </form>
+      <img class="icon-wts" src=".img/whats.webp" alt="" id="wtsicon" />
+    </div>
+
+    <script>
+      var btnwts = document.querySelector("#wtsicon");
+      var form = document.querySelector("#form");
+      var sendbtn = document.querySelector("#sendbtn");
+
+      btnwts.addEventListener("click", function () {
+        form.classList.toggle("entrarysalir");
+      });
+
+      sendbtn.addEventListener("click", enviarMensaje);
+
+      function enviarMensaje() {
+        var inputName = document.querySelector(".inputwts").value;
+        var textareaMensaje = document.querySelector(".textareawts").value;
+        let url =
+          "https://api.whatsapp.com/send?phone=3045248972&text=¿Cual es tu nombre?: %0A" +
+          inputName +
+          "%0A%0A¿Que deseas Ordenar?: %0A" +
+          textareaMensaje +
+          "%0A";
+
+        window.open(url);
+      }
+    </script>
+    <!-- chat whatsapp END-->
+
+    <!-- main-footer -->
+    <footer class="main-footer">
+      <figure class="footer-logo">
+        <a href="index.html"><img src=".img/BARRIGAS FELICES.png" alt="" /></a>
+      </figure>
+
+      <div class="footer-widget">
+        <div class="widget-title">
+          <h3>Contactanos</h3>
+        </div>
+        <div class="widget-content">
+          <ul class="links-list">
+            <li>4708 Ruecker Wall, <br />Kassandratown, HI</li>
+            <li><a href="tel:23055873407">+2(305) 587-3407</a></li>
+            <li><a href="mailto:info@example.com">info@example.com</a></li>
+          </ul>
+        </div>
+
+        <ul class="footer-social">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-vimeo-v"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="end-footer">
+      <span>Food © 2020 All Right Reserved</span>
+    </div>
+    <!-- main-footer end -->
+  </body>
+</html>
